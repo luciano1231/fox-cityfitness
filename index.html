@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness & Health Centers | Fox Gym & City Fitness - Corrientes</title>
+    <meta name="description"
+        content="Fox Gym y City Fitness en Corrientes Capital. Musculación, baile, funcional, suplementos deportivos y más. ¡Empezá hoy!">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@300;400;600;700;800;900&family=Montserrat:wght@400;700;900&family=Orbitron:wght@700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-inner">
+            <div class="loader-bar"></div>
+            <span class="loader-text">CARGANDO</span>
+        </div>
+    </div>
+
+    <!-- Cursor follower -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand">
+                <img src="imagenes/logoFox.png" alt="Fox Gym" class="nav-logo">
+                <span class="nav-divider"></span>
+                <img src="imagenes/LogoCity.png" alt="City Fitness" class="nav-logo">
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" data-text="INICIO">INICIO</a></li>
+                <li><a href="#fox-gym" data-text="FOX GYM">FOX GYM</a></li>
+                <li><a href="#city-fitness" data-text="CITY FITNESS">CITY FITNESS</a></li>
+                <li><a href="#servicios" data-text="SERVICIOS">SERVICIOS</a></li>
+                <li><a href="#catalogo-preview" data-text="PRODUCTOS">PRODUCTOS</a></li>
+                <li><a href="catalogo.html" class="nav-cta" data-text="VER CATÁLOGO">VER CATÁLOGO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-bg-slideshow">
+            <div class="hero-slide active"
+                style="background-image: url('imagenes/fondos/build-your-own-body-strength-fitness-exercise-get-fit.jpg');">
+            </div>
+            <div class="hero-slide"
+                style="background-image: url('imagenes/fondos/full-shot-man-training-with-machine.jpg');"></div>
+            <div class="hero-slide"
+                style="background-image: url('imagenes/fondos/close-up-woman-training-with-dumbbells.jpg');"></div>
+            <div class="hero-slide"
+                style="background-image: url('imagenes/fondos/medium-shot-man-training-with-dumbbells.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <!-- Partículas decorativas -->
+        <div class="particles" id="particles"></div>
+
+        <div class="hero-content">
+            <div class="hero-logos" data-anim="fade-up">
+                <div class="hero-logo-box">
+                    <img src="imagenes/logoFox.png" alt="Fox Gym Training Center" class="hero-logo-img">
+                </div>
+                <div class="hero-x">✕</div>
+                <div class="hero-logo-box">
+                    <img src="imagenes/LogoCity.png" alt="City Fitness" class="hero-logo-img">
+                </div>
+            </div>
+            <h1 class="hero-title glitch" data-text="DOS GIMNASIOS. UNA MISIÓN." data-anim="fade-up"
+                data-delay="200">DOS GIMNASIOS. UNA MISIÓN.</h1>
+            <p class="hero-tagline" data-anim="fade-up" data-delay="400">
+                <span class="tagline-word">SUPERÁ</span>
+                <span class="tagline-word">TUS</span>
+                <span class="tagline-word">LÍMITES</span>
+            </p>
+            <div class="hero-ctas" data-anim="fade-up" data-delay="600">
+                <a href="#fox-gym" class="cta-btn cta-fox">
+                    <span class="cta-bg"></span>
+                    <span class="cta-text">DESCUBRÍ FOX GYM</span>
+                </a>
+                <a href="#city-fitness" class="cta-btn cta-city">
+                    <span class="cta-bg"></span>
+                    <span class="cta-text">CONOCÉ CITY FITNESS</span>
+                </a>
+            </div>
+            <div class="scroll-indicator" data-anim="fade-up" data-delay="800">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span>SCROLLEÁ</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fox Gym Section -->
+    <section id="fox-gym" class="section-fox">
+        <div class="section-bg-img"
+            style="background-image: url('imagenes/fondos/side-view-female-boxer-holding-flask-with-copy-space.jpg');">
+        </div>
+        <div class="section-dark-overlay fox-overlay"></div>
+        <div class="container">
+            <div class="split-layout">
+                <div class="split-content" data-anim="fade-right">
+                    <div class="brand-badge fox-badge">FOX GYM</div>
+                    <img src="imagenes/logoFox.png" alt="Fox Gym" class="section-logo-large">
+                    <h2 class="section-headline fox-headline">CAMBIÁ<br>TU ESTILO<br>DE VIDA</h2>
+                    <p class="section-desc">Fitness moderno, urbano y de alto rendimiento. Enfoque en motivación, acción
+                        y cambio personal. Equipamiento de primera, ambiente hardcore.</p>
+                    <div class="info-row">
+                        <div class="info-chip fox-chip">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            Junín 2087, Corrientes
+                        </div>
+                    </div>
+                    <a href="#" class="action-btn fox-action">
+                        <span>EMPEZÁ HOY</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="split-visual" data-anim="fade-left">
+                    <div class="visual-frame fox-frame">
+                        <img src="imagenes/fondos/full-shot-man-training-with-machine.jpg" alt="Fox Gym"
+                            class="visual-img">
+                        <div class="frame-accent fox-accent-line"></div>
+                    </div>
+                    <div class="floating-stat fox-stat" data-anim="zoom-in" data-delay="400">
+                        <span class="stat-number" data-count="2087">0</span>
+                        <span class="stat-label">JUNÍN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- City Fitness Section -->
+    <section id="city-fitness" class="section-city">
+        <div class="section-bg-img"
+            style="background-image: url('imagenes/fondos/full-shot-man-training-with-ball.jpg');"></div>
+        <div class="section-dark-overlay city-overlay"></div>
+        <div class="container">
+            <div class="split-layout reverse">
+                <div class="split-content" data-anim="fade-left">
+                    <div class="brand-badge city-badge">CITY FITNESS</div>
+                    <img src="imagenes/LogoCity.png" alt="City Fitness" class="section-logo-large">
+                    <h2 class="section-headline city-headline">NUEVO<br>ESPACIO,<br>MISMA ENERGÍA</h2>
+                    <p class="section-desc">Fitness accesible, energético y directo. Promociones, horarios claros,
+                        acción inmediata. Tu gimnasio de confianza.</p>
+                    <div class="info-row">
+                        <div class="info-chip city-chip">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            Junín 773, Corrientes
+                        </div>
+                        <div class="info-chip city-chip">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                            </svg>
+                            0379 423-1648
+                        </div>
+                    </div>
+                    <a href="#" class="action-btn city-action">
+                        <span>¡ACERCATE!</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="split-visual" data-anim="fade-right">
+                    <div class="visual-frame city-frame">
+                        <img src="imagenes/fondos/full-shot-woman-checking-her-watch.jpg" alt="City Fitness"
+                            class="visual-img">
+                        <div class="frame-accent city-accent-line"></div>
+                    </div>
+                    <div class="floating-stat city-stat" data-anim="zoom-in" data-delay="400">
+                        <span class="stat-number" data-count="773">0</span>
+                        <span class="stat-label">JUNÍN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios / Categorías -->
+    <section id="servicios" class="section-services">
+        <div class="container">
+            <div class="section-header" data-anim="fade-up">
+                <span class="section-tag">LO QUE OFRECEMOS</span>
+                <h2 class="section-title-main">NUESTROS SERVICIOS</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="categories-grid">
+                <a href="#" class="category-card" data-anim="fade-up" data-delay="0">
+                    <div class="cat-img-wrapper">
+                        <img src="imagenes/fondos/cat1.avif" alt="Musculación">
+                    </div>
+                    <div class="cat-overlay-gradient"></div>
+                    <div class="cat-content">
+                        <div class="cat-icon">🏋️</div>
+                        <h3>MUSCULACIÓN</h3>
+                        <p>Equipamiento de primer nivel para superar tus límites</p>
+                    </div>
+                </a>
+                <a href="#" class="category-card" data-anim="fade-up" data-delay="150">
+                    <div class="cat-img-wrapper">
+                        <img src="imagenes/fondos/cat2.jpg" alt="Baile">
+                    </div>
+                    <div class="cat-overlay-gradient"></div>
+                    <div class="cat-content">
+                        <div class="cat-icon">💃</div>
+                        <h3>BAILE</h3>
+                        <p>Zumba, ritmos latinos y más para divertirte entrenando</p>
+                    </div>
+                </a>
+                <a href="#" class="category-card" data-anim="fade-up" data-delay="300">
+                    <div class="cat-img-wrapper">
+                        <img src="imagenes/fondos/cat3.jpg" alt="Funcional">
+                    </div>
+                    <div class="cat-overlay-gradient"></div>
+                    <div class="cat-content">
+                        <div class="cat-icon">⚡</div>
+                        <h3>FUNCIONAL</h3>
+                        <p>GAP, stretching, crossfit y entrenamiento complementario</p>
+                    </div>
+                </a>
+                <a href="#" class="category-card" data-anim="fade-up" data-delay="450">
+                    <div class="cat-img-wrapper">
+                        <img src="imagenes/fondos/cat4.avif" alt="Suplementos">
+                    </div>
+                    <div class="cat-overlay-gradient"></div>
+                    <div class="cat-content">
+                        <div class="cat-icon">💊</div>
+                        <h3>SUPLEMENTOS</h3>
+                        <p>Proteínas, creatinas y productos de las mejores marcas</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo Preview -->
+    <section id="catalogo-preview" class="section-catalog-preview">
+        <div class="container">
+            <div class="section-header" data-anim="fade-up">
+                <span class="section-tag">NUESTROS PRODUCTOS</span>
+                <h2 class="section-title-main">CATÁLOGO</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="preview-grid" data-anim="fade-up" data-delay="200">
+                <div class="preview-card">
+                    <div class="preview-img">
+                        <img src="imagenes/catalogo/Whey-protein-7900-AFA-Sabor-Vainilla-Tacho-Gentech-Suplementos-Deportivos-.jpg"
+                            alt="Whey Protein Gentech">
+                    </div>
+                    <div class="preview-info">
+                        <span class="preview-cat">Proteínas</span>
+                        <h4>Whey Protein Gentech 7900</h4>
+                    </div>
+                </div>
+                <div class="preview-card">
+                    <div class="preview-img">
+                        <img src="imagenes/catalogo/0001933_star-nutrition-power-pack_510.jpg" alt="Power Pack">
+                    </div>
+                    <div class="preview-info">
+                        <span class="preview-cat">Pre-Entreno</span>
+                        <h4>Power Pack Star Nutrition</h4>
+                    </div>
+                </div>
+                <div class="preview-card">
+                    <div class="preview-img">
+                        <img src="imagenes/catalogo/1690910569-2023-08-01_suplementos-ena-nota-1.jpg" alt="Creatina ENA">
+                    </div>
+                    <div class="preview-info">
+                        <span class="preview-cat">Creatinas</span>
+                        <h4>Creatina ENA</h4>
+                    </div>
+                </div>
+                <div class="preview-card">
+                    <div class="preview-img">
+                        <img src="imagenes/catalogo/143033_suplemento-dietario-whey-protein-sabor-vainilla-en-polvo-x-1000-g__imagen-1.webp"
+                            alt="Whey Protein">
+                    </div>
+                    <div class="preview-info">
+                        <span class="preview-cat">Proteínas</span>
+                        <h4>Whey Protein Vainilla 1kg</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-cta" data-anim="fade-up" data-delay="400">
+                <a href="catalogo.html" class="action-btn catalog-action">
+                    <span>VER CATÁLOGO COMPLETO</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path
+                    d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,60 1440,60 L1440,120 L0,120 Z"
+                    fill="#000"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logos">
+                        <img src="imagenes/logoFox.png" alt="Fox Gym" class="footer-logo-img">
+                        <img src="imagenes/LogoCity.png" alt="City Fitness" class="footer-logo-img">
+                    </div>
+                    <p class="footer-tagline">FITNESS & HEALTH CENTERS</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading fox-color">FOX GYM</h4>
+                    <ul>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            Junín 2087, Corrientes
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading city-color">CITY FITNESS</h4>
+                    <ul>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            Junín 773, Corrientes
+                        </li>
+                        <li>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                            </svg>
+                            0379 423-1648
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">NAVEGACIÓN</h4>
+                    <ul>
+                        <li><a href="#hero">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fitness & Health Centers. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

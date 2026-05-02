@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos | Fitness & Health Centers</title>
+    <meta name="description" content="Catálogo completo de suplementos deportivos, proteínas, creatinas y accesorios. Fox Gym y City Fitness, Corrientes.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@300;400;600;700;800;900&family=Montserrat:wght@400;700;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="imagenes/logoFox.png" alt="Fox Gym" class="nav-logo">
+                <span class="nav-divider"></span>
+                <img src="imagenes/LogoCity.png" alt="City Fitness" class="nav-logo">
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="index.html#servicios">SERVICIOS</a></li>
+                <li><a href="catalogo.html" class="nav-active">CATÁLOGO</a></li>
+                <li><a href="admin.html" class="nav-cta">ADMIN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Catalog Hero -->
+    <section class="catalog-hero">
+        <div class="container">
+            <h1 class="catalog-hero-title" data-anim="fade-up">CATÁLOGO<br>DE PRODUCTOS</h1>
+            <p class="catalog-hero-sub" data-anim="fade-up" data-delay="200">Suplementos, proteínas, accesorios y más para potenciar tu entrenamiento</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="catalog-filters">
+        <div class="container">
+            <div class="filters-bar" data-anim="fade-up">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="proteinas">Proteínas</button>
+                <button class="filter-btn" data-filter="preentreno">Pre-Entrenos</button>
+                <button class="filter-btn" data-filter="creatinas">Creatinas</button>
+                <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="catalog-products">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                <!-- Proteínas -->
+                <div class="product-card" data-category="proteinas">
+                    <div class="product-badge">PROTEÍNA</div>
+                    <div class="product-image"><img src="imagenes/catalogo/143033_suplemento-dietario-whey-protein-sabor-vainilla-en-polvo-x-1000-g__imagen-1.webp" alt="Whey Protein Vainilla"></div>
+                    <div class="product-body">
+                        <h3>Whey Protein Vainilla 1kg</h3>
+                        <p class="product-desc">Proteína de suero de leche sabor vainilla. Ideal para post-entrenamiento.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="proteinas">
+                    <div class="product-badge">PROTEÍNA</div>
+                    <div class="product-image"><img src="imagenes/catalogo/Whey-protein-7900-AFA-Sabor-Vainilla-Tacho-Gentech-Suplementos-Deportivos-.jpg" alt="Gentech 7900"></div>
+                    <div class="product-body">
+                        <h3>Whey Protein Gentech 7900</h3>
+                        <p class="product-desc">Fórmula avanzada Gentech con aminoácidos esenciales para máximo rendimiento.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="proteinas">
+                    <div class="product-badge">PROTEÍNA</div>
+                    <div class="product-image"><img src="imagenes/catalogo/0000350_whey-protein-1kg_510.jpg" alt="Star Nutrition Whey"></div>
+                    <div class="product-body">
+                        <h3>Whey Protein Star Nutrition</h3>
+                        <p class="product-desc">Proteína concentrada de alta calidad. 1kg de puro rendimiento.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="proteinas">
+                    <div class="product-badge">PROTEÍNA</div>
+                    <div class="product-image"><img src="imagenes/catalogo/120346_suplemento-dietario-whey-x-pro-x-1000-g_imagen-1.webp" alt="Whey X Pro"></div>
+                    <div class="product-body">
+                        <h3>Whey X Pro 1kg</h3>
+                        <p class="product-desc">Suplemento dietario con proteína de suero premium.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="proteinas">
+                    <div class="product-badge">PROTEÍNA</div>
+                    <div class="product-image"><img src="imagenes/catalogo/Whey-Protein-17484378251.jpg" alt="Whey Protein"></div>
+                    <div class="product-body">
+                        <h3>Whey Protein Premium</h3>
+                        <p class="product-desc">Fórmula premium para desarrollo muscular.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="proteinas">
+                    <div class="product-badge">PROTEÍNA</div>
+                    <div class="product-image"><img src="imagenes/catalogo/whey-protein-vainilla-1-9306f3264a8d57e69c17597542124119-1024-1024.webp" alt="Whey Vainilla"></div>
+                    <div class="product-body">
+                        <h3>Whey Protein Vainilla</h3>
+                        <p class="product-desc">Proteína sabor vainilla de excelente disolución.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="proteinas">
+                    <div class="product-badge">PROTEÍNA</div>
+                    <div class="product-image"><img src="imagenes/catalogo/Whey-protein-7900-AFA-Dorso-Gentech-Suplementos-Deportivos-1-680x680.jpg" alt="Gentech Dorso"></div>
+                    <div class="product-body">
+                        <h3>Gentech 7900 AFA</h3>
+                        <p class="product-desc">Edición especial AFA con tabla nutricional mejorada.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+
+                <!-- Pre-entrenos -->
+                <div class="product-card" data-category="preentreno">
+                    <div class="product-badge pre">PRE-ENTRENO</div>
+                    <div class="product-image"><img src="imagenes/catalogo/0001933_star-nutrition-power-pack_510.jpg" alt="Power Pack"></div>
+                    <div class="product-body">
+                        <h3>Power Pack Star Nutrition</h3>
+                        <p class="product-desc">Energía explosiva para tus entrenamientos más intensos.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="preentreno">
+                    <div class="product-badge pre">PRE-ENTRENO</div>
+                    <div class="product-image"><img src="imagenes/catalogo/251651-800-auto.webp" alt="Amino BCAA"></div>
+                    <div class="product-body">
+                        <h3>Amino BCAA Suplemento</h3>
+                        <p class="product-desc">Aminoácidos ramificados para recuperación muscular.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="preentreno">
+                    <div class="product-badge pre">PRE-ENTRENO</div>
+                    <div class="product-image"><img src="imagenes/catalogo/genera-una-imagen-hiperrealista-de-un-producto-de-suplementos-deportivos-a-partir-de-la-imagen-de-referencia-adjunta-mantene-identicos-los-colores-textos-tipografias-y-proporciones-del-enva-12-1d5c0bc37b3562c55117619219286291-1024-1024.webp" alt="Pre-workout"></div>
+                    <div class="product-body">
+                        <h3>Pre-Workout Energy</h3>
+                        <p class="product-desc">Fórmula concentrada para máximo rendimiento.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+
+                <!-- Creatinas -->
+                <div class="product-card" data-category="creatinas">
+                    <div class="product-badge creat">CREATINA</div>
+                    <div class="product-image"><img src="imagenes/catalogo/1690910569-2023-08-01_suplementos-ena-nota-1.jpg" alt="ENA Creatina"></div>
+                    <div class="product-body">
+                        <h3>Creatina ENA</h3>
+                        <p class="product-desc">Creatina monohidrato de alta pureza. Aumentá tu fuerza.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="creatinas">
+                    <div class="product-badge creat">CREATINA</div>
+                    <div class="product-image"><img src="imagenes/catalogo/product_picture_8ea06729089d4d9db9fe181d6a2dffff_638937833687198430_0_m.png" alt="Creatina"></div>
+                    <div class="product-body">
+                        <h3>Creatina Monohidrato</h3>
+                        <p class="product-desc">Creatina pura para potenciar tus entrenamientos de fuerza.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+
+                <!-- Accesorios -->
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-badge acc">ACCESORIO</div>
+                    <div class="product-image"><img src="imagenes/catalogo/product_picture_019fb793d43a44d5b60b122310a05eed_639090145469372880_0_m.png" alt="Shaker"></div>
+                    <div class="product-body">
+                        <h3>Shaker Mezclador</h3>
+                        <p class="product-desc">Botella mezcladora con compartimento para suplementos.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-badge acc">ACCESORIO</div>
+                    <div class="product-image"><img src="imagenes/catalogo/product_picture_39fce27c6cb44d33869238f02ddc30e6_639046805613189580_0_m.png" alt="Accesorio"></div>
+                    <div class="product-body">
+                        <h3>Guantes de Entrenamiento</h3>
+                        <p class="product-desc">Protección y agarre para tus sesiones de pesas.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-badge acc">ACCESORIO</div>
+                    <div class="product-image"><img src="imagenes/catalogo/product_picture_571fec9cc62f498b93d29b5c7d273ffc_639126259070347280_0_m.webp" alt="Proteína Vegana"></div>
+                    <div class="product-body">
+                        <h3>Proteína Vegana</h3>
+                        <p class="product-desc">Alternativa vegetal de alta calidad proteica.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-badge acc">ACCESORIO</div>
+                    <div class="product-image"><img src="imagenes/catalogo/product_picture_1de21730a38348d7af3d13cbbb5e630d_637907780284244018_0_m.jpg" alt="Producto"></div>
+                    <div class="product-body">
+                        <h3>Suplemento Deportivo</h3>
+                        <p class="product-desc">Complemento nutricional para deportistas exigentes.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fitness & Health Centers. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
