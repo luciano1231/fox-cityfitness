@@ -58,11 +58,13 @@ document.addEventListener('DOMContentLoaded', () => {
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             navLinks.classList.toggle('open');
+            navbar.classList.toggle('menu-open');
         });
-        navLinks.querySelectorAll('a').forEach(link => {
+        navLinks.querySelectorAll('a, button').forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
                 navLinks.classList.remove('open');
+                navbar.classList.remove('menu-open');
             });
         });
     }

@@ -484,14 +484,21 @@ body {
     .footer-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 768px) {
+    .navbar.menu-open {
+        height: 100vh;
+        background: rgba(0,0,0,0.98);
+        align-items: flex-start;
+    }
     .hamburger { display: block; }
     .nav-links {
-        position: fixed; inset: 0; background: rgba(0,0,0,0.98);
-        flex-direction: column; justify-content: center; align-items: center;
-        gap: 20px; opacity: 0; visibility: hidden; transition: all 0.4s;
+        position: absolute; top: 70px; left: 0; width: 100%; height: calc(100vh - 70px);
+        background: transparent;
+        flex-direction: column; justify-content: flex-start; align-items: center;
+        padding-top: 40px;
+        gap: 30px; opacity: 0; visibility: hidden; transition: all 0.4s;
     }
     .nav-links.open { opacity: 1; visibility: visible; }
-    .nav-links a { font-size: 1.2rem; }
+    .nav-links a, .nav-links button { font-size: 1.2rem; }
     .hero-logo-box { width: 90px; height: 90px; }
     .categories-grid { grid-template-columns: 1fr; }
     .category-card { height: 300px; }

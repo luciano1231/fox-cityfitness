@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // If already logged in, skip login page
+    if (localStorage.getItem('gymLoggedUser')) {
+        window.location.href = 'rutinas.html';
+        return;
+    }
+
     const tabs = document.querySelectorAll('.auth-tab');
     const forms = document.querySelectorAll('.auth-form');
 
