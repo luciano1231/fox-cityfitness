@@ -60,8 +60,10 @@ body {
     padding: 12px 0;
     background: rgba(10,10,10,0.7);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(255,255,255,0.05);
-    transition: all 0.4s;
+    transition: padding 0.4s ease, background 0.4s ease, box-shadow 0.4s ease;
+    transform: translateZ(0);
 }
 .navbar.scrolled {
     padding: 8px 0;
