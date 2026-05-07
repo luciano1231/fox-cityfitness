@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Rutinas | Fitness & Health Centers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="rutinas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@300;400;600;700;800;900&family=Montserrat:wght@400;700;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="imagenes/logoFox.png" alt="Fox Gym" class="nav-logo">
+                <span class="nav-divider"></span>
+                <img src="imagenes/LogoCity.png" alt="City Fitness" class="nav-logo">
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="catalogo.html">CATÁLOGO</a></li>
+                <li><button id="logoutBtn" class="nav-cta btn-logout">CERRAR SESIÓN</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Routine Hero -->
+    <section class="rutina-hero">
+        <div class="container">
+            <h1 class="rutina-hero-title" data-anim="fade-up">HOLA, <span id="userNameDisplay" class="fox-color">ATLETA</span></h1>
+            <p class="rutina-hero-sub" data-anim="fade-up" data-delay="200">Este es tu panel de entrenamiento personalizado. Seleccioná una rutina de ejemplo para empezar.</p>
+        </div>
+    </section>
+
+    <!-- Routines Grid -->
+    <section class="rutinas-section">
+        <div class="container">
+            <div class="rutinas-grid">
+                <!-- Rutina 1 -->
+                <div class="rutina-card" data-anim="fade-up">
+                    <div class="rutina-img" style="background-image: url('imagenes/fondos/full-shot-man-training-with-machine.jpg');"></div>
+                    <div class="rutina-content">
+                        <div class="rutina-badge fox-bg">HIPERTROFIA</div>
+                        <h3>Plan de Volumen</h3>
+                        <p>Rutina enfocada en la ganancia muscular. 4 días a la semana. Pecho, Espalda, Piernas y Brazos.</p>
+                        <button class="action-btn rutina-action" onclick="showRutinaModal('hipertrofia')">
+                            <span>VER RUTINA</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Rutina 2 -->
+                <div class="rutina-card" data-anim="fade-up" data-delay="150">
+                    <div class="rutina-img" style="background-image: url('imagenes/fondos/close-up-woman-training-with-dumbbells.jpg');"></div>
+                    <div class="rutina-content">
+                        <div class="rutina-badge city-bg">PÉRDIDA DE PESO</div>
+                        <h3>Circuito Funcional</h3>
+                        <p>Alta intensidad para quemar grasa. Combinación de pesas ligeras y cardio. 3 días a la semana.</p>
+                        <button class="action-btn rutina-action" onclick="showRutinaModal('peso')">
+                            <span>VER RUTINA</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Rutina 3 -->
+                <div class="rutina-card" data-anim="fade-up" data-delay="300">
+                    <div class="rutina-img" style="background-image: url('imagenes/fondos/build-your-own-body-strength-fitness-exercise-get-fit.jpg');"></div>
+                    <div class="rutina-content">
+                        <div class="rutina-badge" style="background: #9C27B0; color:#fff;">FUERZA</div>
+                        <h3>Fuerza Base 5x5</h3>
+                        <p>Rutina clásica para ganar fuerza en movimientos compuestos: Sentadilla, Peso Muerto, Press Banca.</p>
+                        <button class="action-btn rutina-action" onclick="showRutinaModal('fuerza')">
+                            <span>VER RUTINA</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Rutina -->
+    <div id="rutinaModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">✕</button>
+            <h2 id="modalTitle" class="modal-title">Título de Rutina</h2>
+            <div id="modalBody" class="modal-body">
+                <!-- Se inyecta la rutina desde JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fitness & Health Centers. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="rutinas.js"></script>
+</body>
+
+</html>

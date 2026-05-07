@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso / Registro | Fitness & Health Centers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@300;400;600;700;800;900&family=Montserrat:wght@400;700;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="imagenes/logoFox.png" alt="Fox Gym" class="nav-logo">
+                <span class="nav-divider"></span>
+                <img src="imagenes/LogoCity.png" alt="City Fitness" class="nav-logo">
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="catalogo.html">CATÁLOGO</a></li>
+                <li><a href="login.html" class="nav-active">MI RUTINA</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="auth-wrapper">
+        <div class="auth-container">
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-target="loginForm">INGRESAR</button>
+                <button class="auth-tab" data-target="registerForm">REGISTRARSE</button>
+            </div>
+            
+            <div class="auth-forms">
+                <!-- Login Form -->
+                <form id="loginForm" class="auth-form active">
+                    <h2 class="auth-title">BIENVENIDO DE NUEVO</h2>
+                    <p class="auth-subtitle">Ingresá tu DNI y PIN para ver tu rutina</p>
+                    
+                    <div class="form-group">
+                        <label for="loginDni">Número de DNI</label>
+                        <input type="number" id="loginDni" placeholder="Ingresá tu DNI (sin puntos)" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPin">PIN (4 a 6 dígitos)</label>
+                        <input type="password" id="loginPin" placeholder="Ingresá tu PIN" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn auth-btn">INGRESAR A MI RUTINA</button>
+                    <p class="auth-error" id="loginError"></p>
+                </form>
+
+                <!-- Register Form -->
+                <form id="registerForm" class="auth-form">
+                    <h2 class="auth-title">CREÁ TU CUENTA</h2>
+                    <p class="auth-subtitle">Registro rápido. Completá tus datos para empezar.</p>
+                    
+                    <div class="form-group">
+                        <label for="regName">Nombre Completo</label>
+                        <input type="text" id="regName" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="regDni">Número de DNI</label>
+                        <input type="number" id="regDni" placeholder="Tu DNI (sin puntos)" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="regPin">Crear PIN (4 a 6 dígitos)</label>
+                        <input type="password" id="regPin" placeholder="Crea un PIN numérico" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn auth-btn">REGISTRARME</button>
+                    <p class="auth-error" id="registerError"></p>
+                    <p class="auth-success" id="registerSuccess"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+</body>
+
+</html>

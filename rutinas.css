@@ -1,0 +1,221 @@
+/* ===== RUTINAS PAGE STYLES ===== */
+
+.rutina-hero {
+    padding: 160px 0 60px;
+    background: var(--bg-secondary);
+    text-align: center;
+}
+
+.rutina-hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    line-height: 1;
+}
+
+.fox-color { color: var(--fox-accent); }
+.city-color { color: var(--city-accent); }
+.fox-bg { background: var(--fox-accent); color: #000; }
+.city-bg { background: var(--city-accent); color: #fff; }
+
+.rutina-hero-sub {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-top: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rutinas-section {
+    padding: 60px 0 100px;
+    background: var(--bg-primary);
+}
+
+.rutinas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.rutina-card {
+    background: var(--bg-card);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.4s;
+    display: flex;
+    flex-direction: column;
+}
+
+.rutina-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    border-color: rgba(255,193,7,0.2);
+}
+
+.rutina-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.rutina-content {
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.rutina-badge {
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.rutina-content h3 {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.rutina-content p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex: 1;
+}
+
+.rutina-action {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.05);
+}
+
+.rutina-action:hover {
+    background: var(--fox-accent);
+    color: #000;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-content {
+    background: var(--bg-secondary);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 40px;
+    position: relative;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+    transform: translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close:hover {
+    background: var(--fox-accent);
+    color: #000;
+}
+
+.modal-title {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--fox-accent);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 15px;
+}
+
+.modal-body h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+}
+
+.modal-body ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.modal-body ul li {
+    padding: 10px 15px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border-left: 3px solid var(--city-accent);
+    color: var(--text-secondary);
+}
+
+.modal-body ul li strong {
+    color: #fff;
+}
+
+.btn-logout {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.btn-logout:hover {
+    background: rgba(255,59,48,0.15);
+    color: #FF3B30;
+}
