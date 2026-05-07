@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Panel | Fitness & Health Centers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@300;400;600;700;800;900&family=Montserrat:wght@400;700;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="imagenes/logoFox.png" alt="Fox Gym" class="nav-logo">
+                <span class="nav-divider"></span>
+                <img src="imagenes/LogoCity.png" alt="City Fitness" class="nav-logo">
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="catalogo.html">CATÁLOGO</a></li>
+                <li><a href="rutinas.html" class="nav-cta">MI RUTINA</a></li>
+                <li>
+                    <a href="perfil.html" class="nav-profile-btn active" id="navProfileBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span class="profile-badge" id="profileBadge" style="display:none;"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Panel Hero -->
+    <section class="panel-hero">
+        <div class="container">
+            <h1 class="panel-hero-title" data-anim="fade-up">MI PANEL</h1>
+            <p class="panel-hero-sub" data-anim="fade-up" data-delay="200">Gestioná tus datos y estado de cuenta</p>
+        </div>
+    </section>
+
+    <!-- Panel Content -->
+    <section class="panel-section">
+        <div class="container">
+            <div class="panel-layout">
+                
+                <!-- Payment Status -->
+                <div class="panel-card status-card" data-anim="fade-right">
+                    <h3>ESTADO DE CUOTA</h3>
+                    <div id="statusContainer" class="status-container">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+
+                <!-- User Data -->
+                <div class="panel-card data-card" data-anim="fade-left">
+                    <h3>DATOS PERSONALES</h3>
+                    <form id="profileForm">
+                        <div class="form-group">
+                            <label for="profName">Nombre Completo</label>
+                            <input type="text" id="profName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="profDni">DNI</label>
+                            <input type="text" id="profDni" disabled title="El DNI no se puede modificar">
+                        </div>
+                        <div class="form-group">
+                            <label for="profEmail">Correo Electrónico</label>
+                            <input type="email" id="profEmail" placeholder="tu@correo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="profPhone">Teléfono</label>
+                            <input type="tel" id="profPhone" placeholder="Ej: 3794123456">
+                        </div>
+                        <div class="form-group">
+                            <label for="profAddress">Dirección</label>
+                            <input type="text" id="profAddress" placeholder="Ej: Junin 1234">
+                        </div>
+                        <button type="submit" class="submit-btn auth-btn">GUARDAR CAMBIOS</button>
+                        <p id="profileSuccess" class="auth-success"></p>
+                    </form>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <button id="logoutBtnPanel" class="btn-logout" style="border: 1px solid rgba(255,59,48,0.5);">CERRAR SESIÓN</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="checkAuth.js"></script>
+    <script src="perfil.js"></script>
+</body>
+
+</html>

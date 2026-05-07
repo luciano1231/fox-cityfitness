@@ -7,6 +7,7 @@
     <title>Mis Rutinas | Fitness & Health Centers</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="rutinas.css">
+    <link rel="stylesheet" href="perfil.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@300;400;600;700;800;900&family=Montserrat:wght@400;700;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
@@ -27,6 +28,13 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="catalogo.html">CATÁLOGO</a></li>
+                <li><a href="perfil.html" class="nav-profile-btn" id="navProfileBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span class="profile-badge" id="profileBadge" style="display:none;"></span>
+                </a></li>
                 <li><button id="logoutBtn" class="nav-cta btn-logout">CERRAR SESIÓN</button></li>
             </ul>
         </div>
@@ -107,6 +115,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="checkAuth.js"></script>
     <script src="rutinas.js"></script>
 </body>
 

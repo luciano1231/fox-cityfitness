@@ -1,0 +1,137 @@
+/* ===== PERFIL PAGE STYLES ===== */
+
+.panel-hero {
+    padding: 160px 0 60px;
+    background: var(--bg-secondary);
+    text-align: center;
+}
+
+.panel-hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1;
+}
+
+.panel-hero-sub {
+    color: var(--text-secondary);
+    margin-top: 15px;
+}
+
+.panel-section {
+    padding: 60px 0 100px;
+    background: var(--bg-primary);
+}
+
+.panel-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .panel-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+.panel-card {
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.panel-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.status-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.status-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2.5rem;
+}
+
+.status-moroso .status-icon {
+    background: rgba(255,59,48,0.15);
+    color: var(--city-accent);
+    border: 2px solid var(--city-accent);
+    box-shadow: 0 0 20px rgba(255,59,48,0.3);
+}
+
+.status-aldia .status-icon {
+    background: rgba(76,175,80,0.15);
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+    box-shadow: 0 0 20px rgba(76,175,80,0.3);
+}
+
+.status-text {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.status-moroso .status-text { color: var(--city-accent); }
+.status-aldia .status-text { color: #4CAF50; }
+
+.due-date {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    background: rgba(255,255,255,0.05);
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.nav-profile-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+    color: var(--text-secondary);
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.nav-profile-btn:hover, .nav-profile-btn.active {
+    background: var(--fox-accent);
+    color: #000;
+}
+
+.profile-badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 14px;
+    height: 14px;
+    background: var(--city-accent);
+    border: 2px solid #000;
+    border-radius: 50%;
+    animation: pulseBadge 2s infinite;
+}
+
+@keyframes pulseBadge {
+    0% { box-shadow: 0 0 0 0 rgba(255,59,48,0.7); }
+    70% { box-shadow: 0 0 0 6px rgba(255,59,48,0); }
+    100% { box-shadow: 0 0 0 0 rgba(255,59,48,0); }
+}
