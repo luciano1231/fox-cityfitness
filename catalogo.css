@@ -443,6 +443,15 @@
 
 @media (max-width: 768px) {
     .admin-layout { grid-template-columns: 1fr; }
-    .products-grid { grid-template-columns: 1fr; }
+    .products-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+    }
+    .product-image { height: 160px; padding: 15px; }
+    .product-body { padding: 15px; }
+    .product-body h3 { font-size: 0.9rem; margin-bottom: 5px; line-height: 1.2; }
+    .product-desc { font-size: 0.75rem; margin-bottom: 12px; }
+    .product-btn { padding: 10px; font-size: 0.75rem; }
+    .product-badge { top: 10px; left: 10px; padding: 3px 8px; font-size: 0.55rem; }
     .catalog-filters { top: 52px; }
 }
