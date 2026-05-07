@@ -146,38 +146,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ===== CATALOG FILTERS COMPACT SCROLL =====
-    const catalogFilters = document.querySelector('.catalog-filters');
-    if (catalogFilters) {
-        let lastScrollY = window.scrollY;
-        
-        window.addEventListener('scroll', () => {
-            const currentScrollY = window.scrollY;
-            
-            // Scrollear hacia abajo y estar debajo del header
-            if (currentScrollY > lastScrollY && currentScrollY > 250) {
-                catalogFilters.classList.add('compact');
-            } 
-            // Scrollear hacia arriba o estar arriba de todo
-            else if (currentScrollY < lastScrollY || currentScrollY < 250) {
-                catalogFilters.classList.remove('compact');
-            }
-            
-            lastScrollY = currentScrollY;
-        });
-
-        // Expandir al tocar el buscador
-        const searchInput = document.getElementById('searchInput');
-        if (searchInput) {
-            searchInput.addEventListener('focus', () => {
-                catalogFilters.classList.remove('compact');
-            });
-        }
-        
-        // Expandir al tocar los filtros (por si acaso)
-        catalogFilters.addEventListener('click', (e) => {
-            if (catalogFilters.classList.contains('compact')) {
-                catalogFilters.classList.remove('compact');
-            }
-        });
-    }
+    // Removed to eliminate scroll jitter. Filters now use horizontal scroll.
 });
