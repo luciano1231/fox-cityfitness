@@ -103,19 +103,43 @@ document.addEventListener('DOMContentLoaded', () => {
     // ===== CATALOG FILTER (for catalogo.html) =====
     const filterBtns = document.querySelectorAll('.filter-btn');
     const productCards = document.querySelectorAll('.product-card');
+    const searchInput = document.getElementById('searchInput');
+
     if (filterBtns.length && productCards.length) {
+        let currentFilter = 'all';
+        let currentSearch = '';
+
+        const updateCatalog = () => {
+            let visibleIndex = 0;
+            productCards.forEach((card) => {
+                const cat = card.getAttribute('data-category');
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                
+                const matchesFilter = currentFilter === 'all' || cat === currentFilter;
+                const matchesSearch = currentSearch === '' || title.includes(currentSearch);
+                const show = matchesFilter && matchesSearch;
+                
+                card.style.transitionDelay = show ? `${visibleIndex * 30}ms` : '0ms';
+                card.classList.toggle('hidden-card', !show);
+                
+                if (show) visibleIndex++;
+            });
+        };
+
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 filterBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-                const filter = btn.getAttribute('data-filter');
-                productCards.forEach((card, i) => {
-                    const cat = card.getAttribute('data-category');
-                    const show = filter === 'all' || cat === filter;
-                    card.style.transitionDelay = show ? `${i * 30}ms` : '0ms';
-                    card.classList.toggle('hidden-card', !show);
-                });
+                currentFilter = btn.getAttribute('data-filter');
+                updateCatalog();
             });
         });
+
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                currentSearch = e.target.value.toLowerCase().trim();
+                updateCatalog();
+            });
+        }
     }
 });

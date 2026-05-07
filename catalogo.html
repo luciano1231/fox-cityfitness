@@ -45,12 +45,17 @@
     <!-- Filters -->
     <section class="catalog-filters">
         <div class="container">
-            <div class="filters-bar" data-anim="fade-up">
+            <div class="search-container" data-anim="fade-up">
+                <input type="text" id="searchInput" class="catalog-search" placeholder="Buscar producto por nombre...">
+            </div>
+            <div class="filters-bar" data-anim="fade-up" data-delay="100">
                 <button class="filter-btn active" data-filter="all">Todos</button>
                 <button class="filter-btn" data-filter="proteinas">Proteínas</button>
                 <button class="filter-btn" data-filter="preentreno">Pre-Entrenos</button>
                 <button class="filter-btn" data-filter="creatinas">Creatinas</button>
                 <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+                <button class="filter-btn" data-filter="equipamiento">Equipamiento</button>
+                <button class="filter-btn" data-filter="indumentaria">Indumentaria</button>
             </div>
         </div>
     </section>
@@ -185,9 +190,18 @@
                 </div>
                 <div class="product-card" data-category="accesorios">
                     <div class="product-badge acc">ACCESORIO</div>
+                    <div class="product-image"><img src="imagenes/catalogo/botellas.webp" alt="Botella de Agua"></div>
+                    <div class="product-body">
+                        <h3>Botella de Agua Deportiva</h3>
+                        <p class="product-desc">Botella de hidratación resistente y libre de BPA.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-badge acc">ACCESORIO</div>
                     <div class="product-image"><img src="imagenes/catalogo/product_picture_39fce27c6cb44d33869238f02ddc30e6_639046805613189580_0_m.png" alt="Accesorio"></div>
                     <div class="product-body">
-                        <h3>Guantes de Entrenamiento</h3>
+                        <h3>Guantes de Entrenamiento (V1)</h3>
                         <p class="product-desc">Protección y agarre para tus sesiones de pesas.</p>
                         <a href="#" class="product-btn">CONSULTAR</a>
                     </div>
@@ -207,6 +221,55 @@
                     <div class="product-body">
                         <h3>Suplemento Deportivo</h3>
                         <p class="product-desc">Complemento nutricional para deportistas exigentes.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+
+                <!-- Equipamiento -->
+                <div class="product-card" data-category="equipamiento">
+                    <div class="product-badge equip">EQUIPO</div>
+                    <div class="product-image"><img src="imagenes/catalogo/bandas2.webp" alt="Bandas Elásticas"></div>
+                    <div class="product-body">
+                        <h3>Bandas Elásticas</h3>
+                        <p class="product-desc">Set de bandas elásticas para entrenamiento de resistencia.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="equipamiento">
+                    <div class="product-badge equip">EQUIPO</div>
+                    <div class="product-image"><img src="imagenes/catalogo/cinturon-negro.webp" alt="Cinturón de Levantamiento"></div>
+                    <div class="product-body">
+                        <h3>Cinturón de Levantamiento</h3>
+                        <p class="product-desc">Cinturón reforzado para soporte lumbar en ejercicios de fuerza.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="equipamiento">
+                    <div class="product-badge equip">EQUIPO</div>
+                    <div class="product-image"><img src="imagenes/catalogo/muñequeras.webp" alt="Muñequeras Deportivas"></div>
+                    <div class="product-body">
+                        <h3>Muñequeras Deportivas</h3>
+                        <p class="product-desc">Muñequeras elásticas para mayor estabilidad en levantamientos.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+
+                <!-- Indumentaria -->
+                <div class="product-card" data-category="indumentaria">
+                    <div class="product-badge indu">INDUMENTARIA</div>
+                    <div class="product-image"><img src="imagenes/catalogo/Guantes2.avif" alt="Guantes de Entrenamiento"></div>
+                    <div class="product-body">
+                        <h3>Guantes de Entrenamiento (V2)</h3>
+                        <p class="product-desc">Guantes con protección palmar para un agarre seguro.</p>
+                        <a href="#" class="product-btn">CONSULTAR</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="indumentaria">
+                    <div class="product-badge indu">INDUMENTARIA</div>
+                    <div class="product-image"><img src="imagenes/catalogo/bolso.jpg" alt="Bolso Deportivo"></div>
+                    <div class="product-body">
+                        <h3>Bolso Deportivo</h3>
+                        <p class="product-desc">Amplio bolso para llevar todo tu equipamiento al gimnasio.</p>
                         <a href="#" class="product-btn">CONSULTAR</a>
                     </div>
                 </div>

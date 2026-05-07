@@ -96,7 +96,9 @@ document.addEventListener('DOMContentLoaded', () => {
             proteinas: 'Proteínas',
             preentreno: 'Pre-Entrenos',
             creatinas: 'Creatinas',
-            accesorios: 'Accesorios'
+            accesorios: 'Accesorios',
+            equipamiento: 'Equipamiento',
+            indumentaria: 'Indumentaria'
         };
 
         productList.innerHTML = products.map(p => `
