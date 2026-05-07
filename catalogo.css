@@ -3,7 +3,9 @@
 /* Catalog Hero */
 .catalog-hero {
     padding: 160px 0 80px;
-    background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+    background: linear-gradient(135deg, rgba(10, 10, 10, 0.75), rgba(17, 17, 17, 0.9)), url('imagenes/catalogo/Fondocatalogo.png');
+    background-size: cover;
+    background-position: center;
     text-align: center;
     position: relative;
     overflow: hidden;
