@@ -146,5 +146,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ===== CATALOG FILTERS COMPACT SCROLL =====
-    // Removed to eliminate scroll jitter. Filters now use horizontal scroll.
+    const catalogFilters = document.querySelector('.catalog-filters');
+    if (catalogFilters) {
+        window.addEventListener('scroll', () => {
+            const rect = catalogFilters.getBoundingClientRect();
+            // Navbar is 52px tall when scrolled. When rect.top <= 53, it's sticky.
+            if (rect.top <= 53) {
+                catalogFilters.classList.add('compact');
+            } else {
+                catalogFilters.classList.remove('compact');
+            }
+        });
+    }
 });

@@ -87,16 +87,22 @@
 
 .filters-bar {
     display: flex;
-    justify-content: flex-start;
-    gap: 10px;
-    overflow-x: auto;
-    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 8px;
+    overflow: hidden;
+    flex-wrap: wrap;
     padding: 5px 20px 10px;
+}
+
+.catalog-filters.compact .filters-bar {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none; /* Firefox */
 }
 
-.filters-bar::-webkit-scrollbar {
+.catalog-filters.compact .filters-bar::-webkit-scrollbar {
     display: none; /* Chrome/Safari */
 }
 
@@ -110,12 +116,12 @@
     background: rgba(255,255,255,0.05);
     color: var(--text-secondary);
     border: 1px solid rgba(255,255,255,0.1);
-    padding: 8px 20px;
+    padding: 6px 16px;
     border-radius: 30px;
     cursor: pointer;
     font-family: var(--font-body);
     font-weight: 700;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     letter-spacing: 0.5px;
     transition: all 0.3s;
     white-space: nowrap;
