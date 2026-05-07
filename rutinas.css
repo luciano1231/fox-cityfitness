@@ -201,21 +201,4 @@
     color: #fff;
 }
 
-.btn-logout {
-    background: none;
-    border: none;
-    color: var(--text-secondary);
-    font-family: var(--font-body);
-    font-weight: 700;
-    font-size: 0.85rem;
-    letter-spacing: 1.5px;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 30px;
-    transition: all 0.3s;
-}
 
-.btn-logout:hover {
-    background: rgba(255,59,48,0.15);
-    color: #FF3B30;
-}

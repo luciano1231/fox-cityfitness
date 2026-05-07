@@ -98,7 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
             creatinas: 'Creatinas',
             accesorios: 'Accesorios',
             equipamiento: 'Equipamiento',
-            indumentaria: 'Indumentaria'
+            indumentaria: 'Indumentaria',
+            ropa: 'Ropa'
         };
 
         productList.innerHTML = products.map(p => `
